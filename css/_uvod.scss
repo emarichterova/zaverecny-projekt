@@ -1,0 +1,37 @@
+.title-page__text {
+    border: 2px solid rgb(238, 191, 169);
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.tlacitko--hnedy {
+    padding: 10px;
+    background-color: burlywood;
+    border-radius: 5px;
+    border: 1px solid burlywood;
+    font-size: 15px;
+    font-family: 'Sora', sans-serif;
+    margin: 10px 0;
+}
+
+ .obsah {
+     margin: 20px;
+ }
+
+.mobil__schovat {
+    display: none;
+
+    @media screen and (min-width: 800px) {
+        display: block;
+    }
+}
+
+.na-dalsi-stranu {
+    text-decoration: none;
+    color: gray;
+}
+
+ p {
+     line-height: 1.5em;
+ }

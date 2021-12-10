@@ -1,0 +1,33 @@
+.paticka {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+}
+
+.paticka--link {
+    margin: 7px;
+    text-decoration: none;
+    display: block;
+    color: white;
+    margin: 0;
+}
+
+.paticka--link:hover  {
+    text-decoration: white underline;
+}
+
+.paticka--h3 {
+    margin: 10px 0;
+}
+
+.social-media-links {
+    margin-top: 15px;
+}
+
+.copyright {
+    margin-top: 20px;
+    display: block;
+}

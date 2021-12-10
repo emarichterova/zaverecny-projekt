@@ -1,0 +1,36 @@
+@use 'menu' ;
+
+@use 'footer' ;
+
+@use 'uvod' ;
+
+@use 'onas' ;
+
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *, ::before, ::after {
+    box-sizing: inherit;
+  }
+
+body {
+    margin: 0;
+    // font-family: 'Roboto', sans-serif;
+    font-family: 'Sora', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  line-height: 1.5em;
+}
+
+p {
+  font-size: 17.5px;
+}
+
+.responzivni-obrazek {
+  width: 100%;
+}
+
