@@ -87,3 +87,14 @@
     }
 
 }
+
+@media screen and (min-width: 1000px) {
+    
+    .grid-nas-tym {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 300px;
+        gap: 20px;
+    }
+
+}
