@@ -1,0 +1,67 @@
+.nadpis-4 {
+    margin-bottom: 10px;
+}
+
+.odkaz {
+    color: black;
+}
+
+.nazev {
+    display: block;
+    margin: 15px 0 10px 0;
+    font-size: 17.5px;
+}
+
+.odeslat {
+    display: block;
+}
+
+.formular {
+    width: 100%;
+}
+
+.pole {
+    border: 2px solid gray;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 17.5px;
+}
+
+.tlacitko--zelena {
+    background-color: #8ec760;
+    border: 1px solid #9cd86a;
+    color: white;
+}
+
+.nas-tym {
+    border-radius: 10px;
+}
+
+.foto__popis {
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+
+    .kontejner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .kontakt-levo {
+        order: 1;
+    }
+
+    .kontakt-pravo {
+        order: 2;
+        flex-basis: 50%;
+    }
+
+    .nadpis-1 {
+        font-size: 50px;
+    }
+
+
+
+
+}

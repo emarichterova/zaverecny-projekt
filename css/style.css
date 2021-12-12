@@ -3,18 +3,26 @@
   left: -9999px;
 }
 
+.menu {
+  position: relative;
+}
+
 .menu__list {
   margin: 0;
   padding: 0;
   list-style: none;
   display: none;
   text-align: center;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 100vw;
+  background-color: white;
 }
 
 .menu__link {
   display: block;
   padding: 15px;
-  padding-left: 0;
   text-decoration: none;
   color: black;
 }
@@ -34,7 +42,7 @@
 
 .header__container {
   display: flex;
-  margin: 20px;
+  margin: 10px 20px 20px 20px;
   justify-content: space-between;
   align-items: center;
 }
@@ -42,7 +50,7 @@
 .paticka {
   background-color: black;
   color: white;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .paticka--link {
@@ -71,6 +79,16 @@
   display: block;
 }
 
+.podtrzeni--bile {
+  -webkit-text-decoration: white underline;
+          text-decoration: white underline;
+}
+
+@media screen and (min-width: 800px) {
+  .kontejner--paticka {
+    padding-right: 50px;
+  }
+}
 .title-page__text {
   border: 2px solid #eebfa9;
   margin: 20px;
@@ -78,18 +96,25 @@
   padding: 10px;
 }
 
-.tlacitko--hnedy {
+.tlacitko {
   padding: 10px;
-  background-color: burlywood;
   border-radius: 5px;
-  border: 1px solid burlywood;
-  font-size: 15px;
+  font-size: 17.5px;
   font-family: "Sora", sans-serif;
   margin: 10px 0;
 }
 
+.tlacitko--hnedy {
+  background-color: burlywood;
+  border: 1px solid burlywood;
+}
+
+.tlacitko--hnedy:hover {
+  background-color: #C19A6B;
+}
+
 .obsah {
-  margin: 20px;
+  margin: 20px 35px;
 }
 
 .mobil__schovat {
@@ -108,6 +133,23 @@
 
 p {
   line-height: 1.5em;
+}
+
+.uvod-hlavni-nadpis {
+  text-align: center;
+  font-size: 50px;
+}
+
+.obrazek--uvodni {
+  width: calc(100% - (2 * 20px));
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 700px) {
+  .obrazek--uvodni {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 p {
@@ -133,6 +175,72 @@ p {
     display: none;
   }
 }
+.tlacitko__odkaz {
+  color: white;
+}
+
+.nadpis-4 {
+  margin-bottom: 10px;
+}
+
+.odkaz {
+  color: black;
+}
+
+.nazev {
+  display: block;
+  margin: 15px 0 10px 0;
+  font-size: 17.5px;
+}
+
+.odeslat {
+  display: block;
+}
+
+.formular {
+  width: 100%;
+}
+
+.pole {
+  border: 2px solid gray;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 17.5px;
+}
+
+.tlacitko--zelena {
+  background-color: #8ec760;
+  border: 1px solid #9cd86a;
+  color: white;
+}
+
+.nas-tym {
+  border-radius: 10px;
+}
+
+.foto__popis {
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  .kontejner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .kontakt-levo {
+    order: 1;
+  }
+
+  .kontakt-pravo {
+    order: 2;
+    flex-basis: 50%;
+  }
+
+  .nadpis-1 {
+    font-size: 50px;
+  }
+}
 html {
   box-sizing: border-box;
 }
@@ -155,6 +263,39 @@ p {
   font-size: 17.5px;
 }
 
+figure {
+  margin: 0;
+}
+
 .responzivni-obrazek {
   width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .obsah {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .obsah {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .obsah {
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .obsah {
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }/*# sourceMappingURL=style.css.map */

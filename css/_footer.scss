@@ -1,7 +1,7 @@
 .paticka {
     background-color: black;
     color: white;
-    padding: 20px;
+    padding: 20px 0;
     // display: flex;
     // justify-content: space-between;
     // align-items: center;
@@ -30,4 +30,17 @@
 .copyright {
     margin-top: 20px;
     display: block;
+}
+
+.podtrzeni--bile {
+    text-decoration: white underline;
+}
+
+@media screen and (min-width: 800px) {
+    
+    .kontejner--paticka {
+        padding-right: 50px;
+    }
+
+
 }

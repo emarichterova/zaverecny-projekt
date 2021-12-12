@@ -3,18 +3,26 @@
 	left: -9999px;
 }
 
+.menu {
+	position: relative;
+}
+
 .menu__list {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	display: none;
   	text-align: center;
+	position: absolute;
+	right: 0;
+	top: 100%;
+	width: 100vw;
+	background-color: white;
 }
 
 .menu__link {
 	display: block;
 	padding: 15px;
-	padding-left: 0;
 	text-decoration: none;
 	color: black;
 }
@@ -34,7 +42,7 @@
 
 .header__container {
 	display: flex;
-	margin: 20px;
+	margin: 10px 20px 20px 20px;
 	justify-content: space-between;
    	align-items: center;
 }

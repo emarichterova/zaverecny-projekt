@@ -6,6 +6,10 @@
 
 @use 'onas' ;
 
+@use 'pridejse' ;
+
+@use 'kontakt' ;
+
 
 html {
     box-sizing: border-box;
@@ -30,7 +34,47 @@ p {
   font-size: 17.5px;
 }
 
+figure {
+  margin: 0;
+}
+
 .responzivni-obrazek {
   width: 100%;
 }
 
+
+@media screen and (min-width: 800px) {
+  .obsah {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+  .obsah {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .obsah {
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+@media screen and (min-width: 1400px) {
+  .obsah {
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}

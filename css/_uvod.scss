@@ -5,18 +5,25 @@
     padding: 10px;
 }
 
-.tlacitko--hnedy {
+.tlacitko {
     padding: 10px;
-    background-color: burlywood;
     border-radius: 5px;
-    border: 1px solid burlywood;
-    font-size: 15px;
+    font-size: 17.5px;
     font-family: 'Sora', sans-serif;
     margin: 10px 0;
 }
 
+.tlacitko--hnedy {
+    background-color: burlywood;
+    border: 1px solid burlywood;
+}
+
+.tlacitko--hnedy:hover {
+    background-color: #C19A6B;
+}
+
  .obsah {
-     margin: 20px;
+     margin: 20px 35px;
  }
 
 .mobil__schovat {
@@ -34,4 +41,19 @@
 
  p {
      line-height: 1.5em;
+ }
+
+ .uvod-hlavni-nadpis {
+     text-align: center;
+     font-size: 50px;
+ }
+
+.obrazek--uvodni {
+    width: calc(100% - (2 * 20px));
+    object-fit: cover;
+    
+    @media screen and (min-width: 700px) {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
  }
