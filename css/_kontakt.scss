@@ -41,6 +41,20 @@
     text-align: center;
 }
 
+.jmeno {
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+.funkce {
+    margin: 5px 0;
+    font-size: 17.5px;
+}
+
+.clen-tymu {
+    margin-bottom: 25px;
+}
+
 @media screen and (min-width: 800px) {
 
     .kontejner {
@@ -61,7 +75,15 @@
         font-size: 50px;
     }
 
+}
 
-
+@media screen and (min-width: 800px) {
+    
+    .grid-nas-tym {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat();
+        gap: 20px;
+    }
 
 }
