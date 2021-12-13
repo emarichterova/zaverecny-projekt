@@ -1,9 +1,14 @@
+.mobil--zmizet {
+	display: none;
+}
+
+
 .menu__checkbox {
 	position: absolute;
 	left: -9999px;
 }
 
-.menu {
+.hamburgermenu {
 	position: relative;
 }
 
@@ -28,16 +33,23 @@
 }
 
 .menu__link:hover {
-  color: blueviolet;
+  color: #00B2CA;
 }
 
 .menu__checkbox:checked ~ .menu__list {
 	display: block;
 }
 
-.logo {
-  color: black;
-  margin-left: 0;
+.header__nazev {
+	font-family: 'Poppins', sans-serif;
+	color: black;
+	font-size: 15px;
+	margin-bottom: 0;
+}
+
+.header__logo {
+	display: flex;
+	align-items: center;
 }
 
 .header__container {
@@ -45,4 +57,22 @@
 	margin: 10px 20px 20px 20px;
 	justify-content: space-between;
    	align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+	
+	.pc--zmizet {
+		display: none;
+	}
+
+	.mobil--zmizet {
+		display: block;
+	}
+
+	.pc-menu-polozka {
+		list-style: none;
+		display: inline-block;
+	}
+
+
 }

@@ -1,9 +1,13 @@
+.mobil--zmizet {
+  display: none;
+}
+
 .menu__checkbox {
   position: absolute;
   left: -9999px;
 }
 
-.menu {
+.hamburgermenu {
   position: relative;
 }
 
@@ -28,16 +32,23 @@
 }
 
 .menu__link:hover {
-  color: blueviolet;
+  color: #00B2CA;
 }
 
 .menu__checkbox:checked ~ .menu__list {
   display: block;
 }
 
-.logo {
+.header__nazev {
+  font-family: "Poppins", sans-serif;
   color: black;
-  margin-left: 0;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
 }
 
 .header__container {
@@ -47,10 +58,25 @@
   align-items: center;
 }
 
+@media screen and (min-width: 800px) {
+  .pc--zmizet {
+    display: none;
+  }
+
+  .mobil--zmizet {
+    display: block;
+  }
+
+  .pc-menu-polozka {
+    list-style: none;
+    display: inline-block;
+  }
+}
 .paticka {
   background-color: black;
   color: white;
   padding: 20px 0;
+  margin-top: 80px;
 }
 
 .paticka--link {
@@ -84,33 +110,32 @@
           text-decoration: white underline;
 }
 
+.logo {
+  flex-grow: 0;
+}
+
 @media screen and (min-width: 800px) {
   .kontejner--paticka {
     padding-right: 50px;
   }
 }
-.title-page__text {
-  border: 2px solid #eebfa9;
-  margin: 20px;
-  border-radius: 10px;
-  padding: 10px;
-}
-
 .tlacitko {
   padding: 10px;
   border-radius: 5px;
   font-size: 17.5px;
   font-family: "Sora", sans-serif;
   margin: 10px 0;
+  display: block;
 }
 
-.tlacitko--hnedy {
-  background-color: burlywood;
-  border: 1px solid burlywood;
+.tlacitko--ruzova {
+  background-color: #00B2CA;
+  border: 1px solid #00B2CA;
 }
 
-.tlacitko--hnedy:hover {
-  background-color: #C19A6B;
+.tlacitko--petrolejova {
+  background-color: #37515F;
+  border: 1px solid #37515F;
 }
 
 .obsah {
@@ -141,7 +166,7 @@ p {
 }
 
 .obrazek--uvodni {
-  width: calc(100% - (2 * 20px));
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -169,10 +194,6 @@ p {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-  }
-
-  .pc--schovat {
-    display: none;
   }
 }
 .tlacitko__odkaz {
@@ -261,14 +282,36 @@ p {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat();
     gap: 20px;
+    margin-bottom: 100px;
+  }
+
+  .clen-tymu {
+    display: grid;
+    grid-template-rows: 1fr auto;
   }
 }
 @media screen and (min-width: 1000px) {
   .grid-nas-tym {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 300px;
     gap: 20px;
+  }
+
+  .clen-tymu {
+    display: grid;
+    grid-template-rows: 1fr auto;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .grid-nas-tym {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .clen-tymu {
+    display: grid;
+    grid-template-rows: 1fr auto;
   }
 }
 html {
